@@ -8,12 +8,15 @@ currentBall = 0
 
 function overOver() {
     if ((currentBall % 6) === 0) {
-        activePlayer === 0 ? activePlayer = 1 : activePlayer = 0
+        console.log("change ends")
+        activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
     }
 }
 
-for (i = 0; i < innings.length; i++) {
+for (i = 1; i < innings.length; i++) {
     currentBall++
+    console.log(currentBall);
+    
     overOver()
     
     if (activePlayer == 0) {
